@@ -15,7 +15,7 @@ app.post("/webhook", async (req, res) => {
 
   console.log("record", record);
 
-  const status = record.status?.value;
+  const status = record.Status?.value;
   const taskName = record.task?.value;
   const textMessage = record.message?.value;
 
